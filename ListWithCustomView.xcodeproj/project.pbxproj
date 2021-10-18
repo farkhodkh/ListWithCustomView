@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		E82E519B271DF668007463B1 /* ListWithCustomViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82E519A271DF668007463B1 /* ListWithCustomViewApp.swift */; };
-		E82E519D271DF668007463B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82E519C271DF668007463B1 /* ContentView.swift */; };
+		E82E519D271DF668007463B1 /* VideoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82E519C271DF668007463B1 /* VideoListView.swift */; };
 		E82E519F271DF66B007463B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E82E519E271DF66B007463B1 /* Assets.xcassets */; };
 		E82E51A2271DF66B007463B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E82E51A1271DF66B007463B1 /* Preview Assets.xcassets */; };
+		E82E51AB271DF6E8007463B1 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82E51AA271DF6E8007463B1 /* Video.swift */; };
+		E82E51AD271E0563007463B1 /* VideoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82E51AC271E0563007463B1 /* VideoDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E82E5197271DF668007463B1 /* ListWithCustomView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListWithCustomView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E82E519A271DF668007463B1 /* ListWithCustomViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWithCustomViewApp.swift; sourceTree = "<group>"; };
-		E82E519C271DF668007463B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E82E519C271DF668007463B1 /* VideoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListView.swift; sourceTree = "<group>"; };
 		E82E519E271DF66B007463B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E82E51A1271DF66B007463B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E82E51AA271DF6E8007463B1 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		E82E51AC271E0563007463B1 /* VideoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,9 @@
 		E82E5199271DF668007463B1 /* ListWithCustomView */ = {
 			isa = PBXGroup;
 			children = (
+				E82E51A9271DF6CF007463B1 /* data */,
+				E82E51A8271DF6C6007463B1 /* ui */,
 				E82E519A271DF668007463B1 /* ListWithCustomViewApp.swift */,
-				E82E519C271DF668007463B1 /* ContentView.swift */,
 				E82E519E271DF66B007463B1 /* Assets.xcassets */,
 				E82E51A0271DF66B007463B1 /* Preview Content */,
 			);
@@ -65,6 +70,23 @@
 				E82E51A1271DF66B007463B1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E82E51A8271DF6C6007463B1 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				E82E519C271DF668007463B1 /* VideoListView.swift */,
+				E82E51AC271E0563007463B1 /* VideoDetailView.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		E82E51A9271DF6CF007463B1 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				E82E51AA271DF6E8007463B1 /* Video.swift */,
+			);
+			path = data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E82E519D271DF668007463B1 /* ContentView.swift in Sources */,
+				E82E519D271DF668007463B1 /* VideoListView.swift in Sources */,
+				E82E51AD271E0563007463B1 /* VideoDetailView.swift in Sources */,
+				E82E51AB271DF6E8007463B1 /* Video.swift in Sources */,
 				E82E519B271DF668007463B1 /* ListWithCustomViewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
